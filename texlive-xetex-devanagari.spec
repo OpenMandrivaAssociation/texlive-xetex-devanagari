@@ -17,27 +17,18 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
 
 %description
 The package provides a map for use with Jonathan Kew's TECkit,
 to translate Devanagari (encoded according to the Harvard/Kyoto
 convention) to Unicode (range 0900-097F).
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -54,7 +45,6 @@ convention) to Unicode (range 0900-097F).
 %{_texmfdistdir}/fonts/misc/xetex/fontmapping/xetex-devanagari/velthuis.map
 %{_texmfdistdir}/fonts/misc/xetex/fontmapping/xetex-devanagari/velthuis.tec
 %doc %{_texmfdistdir}/doc/xetex/xetex-devanagari/changelog
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -65,5 +55,3 @@ convention) to Unicode (range 0900-097F).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
