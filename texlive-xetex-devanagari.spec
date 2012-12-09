@@ -55,3 +55,16 @@ convention) to Unicode (range 0900-097F).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.4-2
++ Revision: 757596
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.4-1
++ Revision: 719931
+- texlive-xetex-devanagari
+- texlive-xetex-devanagari
+- texlive-xetex-devanagari
+
