@@ -6,7 +6,7 @@
 # catalog-version 0.4
 Name:		texlive-xetex-devanagari
 Version:	0.4
-Release:	3
+Release:	4
 Summary:	XeTeX input map for Unicode Devanagari
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/generic/devanagari
