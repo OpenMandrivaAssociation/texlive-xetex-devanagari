@@ -1,6 +1,6 @@
 Name:		texlive-xetex-devanagari
 Version:	0.5
-Release:	1
+Release:	2
 Summary:	XeTeX input map for Unicode Devanagari
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/generic/devanagari
