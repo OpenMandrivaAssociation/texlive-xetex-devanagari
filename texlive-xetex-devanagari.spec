@@ -3,7 +3,7 @@ Version:	34296
 Release:	2
 Summary:	XeTeX input map for Unicode Devanagari
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/xetex/generic/devanagari
+URL:		https://www.ctan.org/tex-archive/macros/xetex/generic/devanagari
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xetex-devanagari.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xetex-devanagari.doc.r%{version}.tar.xz
